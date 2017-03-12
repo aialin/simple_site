@@ -1,0 +1,12 @@
+<html>
+    <body>
+    <h1>hello</h1>
+    {% for author in authors %}
+        <h2>{{ author }} :</h2>
+        {% for article in author.articles %}
+            <h3> {{ article }} </h3>
+        {% endfor %}
+    {% endfor %}
+
+    </body>
+</html>
